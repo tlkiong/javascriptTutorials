@@ -1,8 +1,23 @@
-var range = function (start, end) {
+// var range = function (start, end) {
+// 	var arrayOfNumbers = [];
+// 	for(var i = start;i<=end;i++){
+// 		arrayOfNumbers.push(i);
+// 	}
+// 	return arrayOfNumbers;
+// }
+
+var range = function (start, end, stepValue) {
 	var arrayOfNumbers = [];
-	for(var i = start;i<=end;i++){
-		arrayOfNumbers.push(i);
+	if(stepValue==undefined){
+		for(var i = start;i<=end;i++){
+			arrayOfNumbers.push(i);
+		}
+	} else {
+		for(var i = start;i<=end;i+=stepValue){
+			arrayOfNumbers.push(i);
+		}
 	}
+	
 	return arrayOfNumbers;
 }
 
