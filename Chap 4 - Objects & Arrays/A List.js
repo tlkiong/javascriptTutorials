@@ -52,4 +52,4 @@ var nth = function(number, list){
 	return element;
 }
 
-console.log("\t return is: "+nth(4,arrayToList(arrays)));
+console.log("\t return is: "+nth(4,arrayToList(arrays))); 
